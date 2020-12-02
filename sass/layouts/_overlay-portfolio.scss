@@ -1,0 +1,44 @@
+.box-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $accent-color;
+  opacity: 0.5;
+  transform: translateY(100%);
+  transition: transform $timing-function;
+
+  .project:hover &,
+  .project:focus & {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+.article-portfolio {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  display: inline-block;
+  width: 322px;
+  height: 168px;
+  text-align: left;
+  justify-content: center;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $white-clr;
+
+  .project:hover &,
+  .project:focus & {
+    opacity: 1;
+    transition: opacity $timing-function;
+  }
+}

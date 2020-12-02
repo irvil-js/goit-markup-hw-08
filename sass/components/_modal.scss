@@ -1,0 +1,308 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 100;
+  transition: opacity $timing-function;
+
+  &:not(is-hidden) .modal {
+    transform: scale(1) translate(-50%, -50%);
+    transform-origin: left top;
+    transition: transform $timing-function;
+  }
+
+  &.is-hidden .modal {
+    transition: transform 0ms;
+    transform: scale(0) translate(-50%, -50%);
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $timing-function;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: $white-clr;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-form {
+  display: inline-block;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  margin-bottom: 12px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 30px;
+  height: 30px;
+  background-color: $white-clr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 50%;
+  text-align: center;
+
+  &:hover .close-icons-svg,
+  &:focus .close-icons-svg {
+    fill: $accent-color;
+    transition: fill $timing-function;
+  }
+}
+
+.close-icons-svg {
+  position: absolute;
+  display: block;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  transform: translate(20%, -50%);
+  transition: fill $timing-function;
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.btn-send {
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  color: $title-color;
+  border: none;
+  transition: color $timing-function, background-color $timing-function,
+    box-shadow $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-clr;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: color $timing-function, background-color $timing-function,
+      box-shadow $timing-function;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.form {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  text-align: start;
+
+  margin-bottom: 10px;
+}
+
+.form-label {
+  display: inline-block;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: $main-text-color;
+  margin-bottom: 4px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  color: $main-text-color;
+  outline: none;
+  transition: border-color $timing-function;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $accent-color;
+    transition: border-color $timing-function;
+  }
+}
+
+.form-input {
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: $title-color;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  transition: border-color $timing-function;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $accent-color;
+    transition: border-color $timing-function;
+  }
+}
+
+.comment-field {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+  textarea::placeholder {
+    font-family: $main-font-family;
+    font-style: $main-font-style;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    transition: border-color $timing-function;
+  }
+}
+
+.icon-modal {
+  position: absolute;
+  display: block;
+  bottom: 14px;
+  left: 14px;
+  background-size: contain;
+  fill: $title-color;
+  transition: fill $timing-function;
+}
+
+.icon-modal-name {
+  width: 12px;
+  height: 12px;
+  left: 15px;
+}
+
+.icon-modal-mail {
+  width: 15px;
+  height: 12px;
+}
+
+.icon-modal-mob {
+  background-size: contain;
+  width: 13px;
+  height: 13px;
+}
+
+.form-input:focus + .icon-modal,
+.form-input:not(:placeholder-shown) + .icon-modal {
+  fill: $accent-color;
+  transition: fill $timing-function;
+}
+
+.contract {
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  margin-bottom: 30px;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid $title-color;
+  margin-right: 8px;
+  border-radius: 2px;
+  background-color: $white-clr;
+}
+
+.checkbox {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+
+  &:checked + .checkbox-icon {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../icons/icon-check.svg);
+    background-size: contain;
+    fill: $white-clr;
+    background-origin: border-box;
+  }
+}
+
+.checkbox-name {
+  color: $accent-color;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-color;
+}

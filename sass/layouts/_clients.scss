@@ -1,0 +1,67 @@
+.link.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    transition: border $timing-function;
+  }
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icons-svg {
+  fill: #afb1b8;
+  display: inline-block;
+  transition: fill $timing-function;
+
+  .link.client-link:hover &,
+  .link.client-link:focus & {
+    fill: $accent-color;
+    transition: fill $timing-function;
+  }
+}
+
+.first-client {
+  width: 44px;
+  height: 49px;
+}
+
+.second-client {
+  width: 40px;
+  height: 52px;
+}
+
+.third-client {
+  width: 41px;
+  height: 43px;
+}
+
+.fourth-client {
+  width: 80px;
+  height: 42px;
+}
+
+.fifth-client {
+  width: 59px;
+  height: 47px;
+}
+
+.sixth-client {
+  width: 88px;
+  height: 45px;
+}
+
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

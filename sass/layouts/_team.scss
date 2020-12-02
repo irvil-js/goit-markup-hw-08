@@ -1,0 +1,54 @@
+.title-name {
+  color: $title-color;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 0;
+  height: 19px;
+}
+
+.section-staff {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.profession {
+  color: $main-text-color;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 19px;
+}
+
+.team-item {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:last-child .profession {
+    margin-bottom: 0;
+  }
+}
+
+.list .team-item {
+  width: 270px;
+  margin-right: 30px;
+  background-color: white;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

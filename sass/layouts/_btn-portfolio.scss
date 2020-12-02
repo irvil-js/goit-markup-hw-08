@@ -1,0 +1,16 @@
+.list-nav {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-portfolio {
+  margin-right: 8px;
+  transition: color $timing-function, background-color $timing-function;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

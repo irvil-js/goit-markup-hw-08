@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  max-width: 100%;
+  margin: auto;
+}
+
+.text {
+  color: $main-text-color;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+  height: 75px;
+}
+
+.link {
+  color: $main-text-color;
+  text-decoration: none;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  transition: color $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: color $timing-function;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}

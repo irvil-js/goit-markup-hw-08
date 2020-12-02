@@ -1,0 +1,106 @@
+.site-nav .link-nav.current {
+  color: $accent-color;
+}
+.site-nav,
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.site-nav .link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.site-nav .item {
+  display: flex;
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.nav {
+  margin-left: 93px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .item + .item {
+    margin-left: 30px;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.link-nav {
+  position: relative;
+  display: inline-flex;
+  color: $title-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+
+    transform: scale(0);
+    transition: transform $timing-function;
+  }
+
+  &:focus::after,
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.icon-nav {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  fill: $main-text-color;
+  transition: fill $timing-function;
+}
+
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+
+  .auth-nav .link:hover &,
+  .auth-nav .link:focus & {
+    fill: $accent-color;
+    transition: fill $timing-function;
+  }
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
+
+  .auth-nav .link:hover &,
+  .auth-nav .link:focus & {
+    fill: $accent-color;
+    transition: fill $timing-function;
+  }
+}
