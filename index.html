@@ -13,11 +13,12 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container main-nav">
         <a href="./" lang="en" class="logo-style link"
           ><span class="logo-accent link">Web</span>Studio</a
         >
+
         <nav class="nav">
           <ul class="site-nav list">
             <li class="item">
@@ -30,6 +31,27 @@
               <a href="" class="link link-nav">Контакты</a>
             </li>
           </ul>
+
+          <button
+            type="button"
+            class="mobile-menu-btn is-open"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-icon-svg"
+                href="./icons/symbol-defs.svg#icon-menu"
+              ></use>
+              <use
+                class="menu-close-svg"
+                href="./icons/symbol-defs.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
         </nav>
 
         <ul class="auth-nav list">
@@ -52,8 +74,39 @@
       </div>
     </header>
 
+    <div class="mobile-menu">
+    <ul class="list site-nav-mobile">
+            <li class="mobile-item">
+              <a href="" class="link-nav link current">Студия</a>
+            </li>
+            <li class="mobile-item">
+              <a href="./portfolio.html" class="link link-nav">Портфолио</a>
+            </li>
+            <li class="mobile-item">
+              <a href="" class="link link-nav">Контакты</a>
+            </li>
+          </ul>
+          <ul class="list auth-nav-mobile">
+          <li class="mobile-auth-item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="icon-nav envelope-icon">
+                <use href="./icons/symbol-defs.svg#icon-envelope"></use></svg
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="mobile-auth-item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon-nav phone-icon">
+                <use href="./icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-view">
           <h1 class="main-title">эффективные решения для вашего бизнеса</h1>
           <button type="button" class="btn-service" data-modal-open>
@@ -673,7 +726,8 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/modalWnd.js" type="text/javascript"></script>
+    <script src="./js/menu.js" type="text/javascript"></script>
   </body>
 </html>
