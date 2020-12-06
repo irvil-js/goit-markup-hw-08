@@ -1,5 +1,8 @@
 // /* /*.site-nav .link-nav.current {
 //   color: $accent-color;
+//  padding-top: 21px;
+//     padding-bottom: 21px;
+
 // }
 // .site-nav,
 // .nav-logo {
@@ -25,8 +28,7 @@
 //     /*     display: inline-flex;
 //  */
 //     align-items: center;
-//     padding-top: 21px;
-//     padding-bottom: 21px;
+//
 //   }
 
 //   .item + .item {
@@ -221,6 +223,9 @@
 .mobile-nav {
   margin-bottom: 60px;
 }
+.mobile-nav .link {
+  height: 21px;
+}
 
 .link-nav {
   position: relative;
@@ -230,7 +235,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -8px;
     display: block;
     width: 100%;
     height: 4px;
