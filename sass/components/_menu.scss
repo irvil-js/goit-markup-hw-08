@@ -207,7 +207,8 @@
   display: inline;
   text-align: center;
 }
-.site-nav-mobile {
+
+.mobile-nav {
   margin-bottom: 60px;
 }
 
@@ -217,10 +218,33 @@
   padding-bottom: 60px;
 }
 
+.mobile-item .link {
+  font-family: $main-font-family;
+  font-style: $main-font-style;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  color: $title-color;
+}
+
+.mobile-auth-item .link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+}
+
 .mobile-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
 .mobile-auth-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    display: none;
+  }
 }
