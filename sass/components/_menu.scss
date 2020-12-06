@@ -107,7 +107,6 @@
   display: block;
   background-size: contain;
   fill: $title-color;
-  transform: translate(-5%, -8%);
   transition: fill $timing-function;
 }
 
@@ -115,7 +114,6 @@
   display: block;
   background-size: contain;
   fill: $title-color;
-  transform: translate(-5%, -5%);
   transition: fill $timing-function;
 }
 
@@ -126,7 +124,6 @@
   margin: 0;
   padding: 0;
   border: none;
-
   background-color: transparent;
 
   & .menu-close-svg:hover,
@@ -134,6 +131,7 @@
     fill: $accent-color;
     transition: fill $timing-function;
   }
+
   & .menu-icon-svg:hover,
   & .menu-icon-svg:focus {
     fill: $accent-color;
@@ -208,6 +206,10 @@
   text-align: center;
 }
 
+// .site-nav-mobile .link-nav.current {
+//   color: $accent-color;
+// }
+
 .mobile-nav {
   margin-bottom: 60px;
 }
@@ -216,6 +218,8 @@
   outline: 1px solid teal;
   padding-top: 60px;
   padding-bottom: 60px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .mobile-item .link {
