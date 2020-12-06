@@ -183,8 +183,8 @@
   width: 16px;
   height: 12px;
 
-  .auth-nav .link:hover &,
-  .auth-nav .link:focus & {
+  .mobile-auth-item .link:hover &,
+  .mobile-auth-item .link:focus & {
     fill: $accent-color;
     transition: fill $timing-function;
   }
@@ -194,8 +194,8 @@
   width: 10px;
   height: 16px;
 
-  .auth-nav .link:hover &,
-  .auth-nav .link:focus & {
+  .mobile-auth-item .link:hover &,
+  .mobile-auth-item .link:focus & {
     fill: $accent-color;
     transition: fill $timing-function;
   }
@@ -205,14 +205,46 @@
 .auth-nav-mobile {
   display: inline;
   text-align: center;
+  transition: color $timing-function;
 }
 
-// .site-nav-mobile .link-nav.current {
-//   color: $accent-color;
-// }
+.site-nav-mobile .link-nav.current {
+  color: $accent-color;
+}
+
+.site-nav-mobile .link-nav:hover,
+.site-nav-mobile .link-nav:focus {
+  color: $accent-color;
+  transition: color $timing-function;
+}
 
 .mobile-nav {
   margin-bottom: 60px;
+}
+
+.link-nav {
+  position: relative;
+  display: inline-flex;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+
+    transform: scale(0);
+    transition: transform $timing-function;
+  }
+
+  &:focus::after,
+  &:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 .mobile-menu {
@@ -236,6 +268,7 @@
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: $title-color;
+  transition: color $timing-function;
 }
 
 .mobile-auth-item .link {
@@ -243,6 +276,7 @@
   font-size: 18px;
   line-height: 1.167;
   letter-spacing: 0.02em;
+  transition: color $timing-function;
 }
 
 .mobile-item:not(:last-child) {
