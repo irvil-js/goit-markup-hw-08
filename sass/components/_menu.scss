@@ -120,28 +120,6 @@
   transition: fill $timing-function;
 }
 
-.mobile-menu-btn {
-  display: none;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  & .menu-close-svg:hover,
-  & .menu-close-svg:focus {
-    fill: $accent-color;
-    transition: fill $timing-function;
-  }
-
-  & .menu-icon-svg:hover,
-  & .menu-icon-svg:focus {
-    fill: $accent-color;
-    transition: fill $timing-function;
-  }
-}
-
 .mobile-menu-btn .menu-close-svg {
   display: none;
 }
@@ -152,6 +130,28 @@
 
 .mobile-menu-btn.is-open .menu-icon-svg {
   display: none;
+}
+
+.mobile-menu-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover .menu-close-svg,
+  &:focus .menu-close-svg {
+    fill: $accent-color;
+    transition: fill $timing-function;
+  }
+
+  &:hover .menu-icon-svg,
+  &:focus .menu-icon-svg {
+    fill: $accent-color;
+    transition: fill $timing-function;
+  }
 }
 
 @media screen and (max-width: 479px) {

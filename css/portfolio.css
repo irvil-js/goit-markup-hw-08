@@ -532,28 +532,6 @@ body {
   transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-btn {
-  display: none;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.mobile-menu-btn .menu-close-svg:hover,
-.mobile-menu-btn .menu-close-svg:focus {
-  fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu-btn .menu-icon-svg:hover,
-.mobile-menu-btn .menu-icon-svg:focus {
-  fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .mobile-menu-btn .menu-close-svg {
   display: none;
 }
@@ -564,6 +542,28 @@ body {
 
 .mobile-menu-btn.is-open .menu-icon-svg {
   display: none;
+}
+
+.mobile-menu-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu-btn:hover .menu-close-svg,
+.mobile-menu-btn:focus .menu-close-svg {
+  fill: #2196f3;
+  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-btn:hover .menu-icon-svg,
+.mobile-menu-btn:focus .menu-icon-svg {
+  fill: #2196f3;
+  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 479px) {
