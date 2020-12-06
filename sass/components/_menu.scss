@@ -36,12 +36,7 @@
 //   }
 // }
 
-// .main-nav {
-//   display: flex;
-//   align-items: center;
-//   /*   justify-content: space-between;
-//  */
-// }
+//
 
 // .link-nav {
 //   position: relative;
@@ -76,10 +71,15 @@
   height: 60px;
 }
 
-.nav {
+.main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
   flex-grow: 1;
   //   margin-left: 93px;
 }
@@ -254,7 +254,6 @@
 
 .mobile-menu {
   display: none;
-  outline: 1px solid teal;
   padding-top: 60px;
   padding-bottom: 60px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
