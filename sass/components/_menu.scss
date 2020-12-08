@@ -1,11 +1,5 @@
 // flex-grow?
 
-// /* /*.site-nav .link-nav.current {
-//   color: $accent-color;
-//  padding-top: 21px;
-//     padding-bottom: 21px;
-
-// }
 // .site-nav,
 // .nav-logo {
 //   /*   display: flex;
@@ -53,7 +47,7 @@
   margin-left: 80px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   flex-grow: 1;
 }
 
@@ -167,28 +161,6 @@
 @media screen and (max-width: 479px) {
   .mobile-menu-btn {
     display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header .container {
-    height: 80px;
-  }
-
-  .site-nav .link-nav::after {
-    bottom: 0;
-  }
-
-  .auth-nav {
-    display: block;
-  }
-
-  .main-nav {
-    display: flex;
-  }
-
-  .site-nav {
-    display: flex;
   }
 }
 
@@ -314,3 +286,27 @@
 .mobile-auth-item:not(:last-child) {
   margin-bottom: 16px;
 }
+
+@media screen and (min-width: $tablet) {
+  .header .container {
+    height: 80px;
+  }
+
+  .site-nav .link-nav::after {
+    bottom: 0;
+  }
+
+  .auth-nav {
+    display: block;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .site-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop) {

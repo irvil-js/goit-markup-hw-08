@@ -650,24 +650,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header .container {
-    height: 80px;
-  }
-  .site-nav .link-nav::after {
-    bottom: 0;
-  }
-  .auth-nav {
-    display: block;
-  }
-  .main-nav {
-    display: flex;
-  }
-  .site-nav {
-    display: flex;
-  }
-}
-
 .site-nav .link-nav.current {
   color: #2196f3;
 }
@@ -788,6 +770,24 @@ body {
 
 .mobile-auth-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    height: 80px;
+  }
+  .site-nav .link-nav::after {
+    bottom: 0;
+  }
+  .auth-nav {
+    display: block;
+  }
+  .main-nav {
+    display: flex;
+  }
+  .site-nav {
+    display: flex;
+  }
 }
 
 .logo-style {
