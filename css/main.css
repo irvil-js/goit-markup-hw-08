@@ -1465,6 +1465,10 @@ textarea {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .item-text {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
 }
 
 .employment {

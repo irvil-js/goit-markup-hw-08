@@ -15,10 +15,6 @@
   height: 16px;
 }
 
-// .item-text {
-//   @extend %list;
-// }
-
 @media screen and (max-width: 767px) {
   .item-text:not(:last-child) {
     margin-bottom: 30px;
@@ -63,15 +59,16 @@
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
-
-  // .item-text + .item-text {
-  //   margin-left: 30px;
-  // }
 }
 
 @media screen and (min-width: $desktop) {
   .advantages {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  .item-text {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
   }
 }
