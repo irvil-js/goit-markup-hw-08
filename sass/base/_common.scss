@@ -26,7 +26,6 @@ h2 {
 }
 
 .container {
-  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -41,6 +40,10 @@ h2 {
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    // .list {
+    //   display: flex;
+    //   flex: wrap;
+    // }
   }
 
   @media screen and (min-width: 1200px) {
@@ -62,7 +65,7 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   margin-bottom: 0;
-  height: 75px;
+  // height: 75px;
 }
 
 .link {
@@ -87,8 +90,8 @@ body {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .section-title {

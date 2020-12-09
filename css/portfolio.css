@@ -445,7 +445,6 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   margin-bottom: 0;
-  height: 75px;
 }
 
 .link {
@@ -469,8 +468,6 @@ body {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .section-title {
@@ -704,7 +701,6 @@ body {
 .link-nav {
   position: relative;
   display: inline-flex;
-  outline: 1px solid teal;
 }
 
 .link-nav::after {
