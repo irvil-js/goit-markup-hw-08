@@ -1,12 +1,5 @@
 // flex-grow?
 
-// .site-nav,
-// .nav-logo {
-//   /*   display: flex;
-//  */
-//   align-items: center;
-// }
-
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -135,7 +128,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 765px) {
   .mobile-menu-btn {
     display: block;
   }

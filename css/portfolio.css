@@ -634,7 +634,7 @@ body {
   transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 765px) {
   .mobile-menu-btn {
     display: block;
   }
