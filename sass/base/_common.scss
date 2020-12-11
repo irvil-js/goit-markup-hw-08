@@ -103,6 +103,6 @@ body {
   color: $title-color;
 
   @media screen and (min-width: $desktop) {
-    width: 50px;
+    margin-bottom: 50px;
   }
 }

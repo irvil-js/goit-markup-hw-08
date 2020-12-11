@@ -226,19 +226,22 @@
   .mailing-btn {
     margin-left: 12px;
   }
+
+  // .mailing-input {
+  //   display: flex;
+  // }
+
+  .subscribe-form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 //     .social-net {
 //     margin-left: 70px;
 //     padding-top: 72px;
 //   }
-
-//   .subscribe-form {
-//     display: flex;
-//   }
-
-//   // .mailing-input {
-//   //   // display: flex;
-//   // }
 
 //   .mailing-btn {
 //     padding-left: 29px;
