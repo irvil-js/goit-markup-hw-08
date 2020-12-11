@@ -1354,12 +1354,36 @@ textarea {
   transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .social-net {
+    margin-left: 165px;
+    padding-top: 65px;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-adress {
     margin-top: 9px;
   }
   .contact-footer {
     margin-bottom: 9px;
+  }
+  .social-net {
+    margin-left: 70px;
+    padding-top: 72px;
+  }
+  .mailing-btn {
+    margin-left: 12px;
   }
 }
 

@@ -160,7 +160,6 @@
   padding-right: 62px;
   padding-top: 10px;
   padding-bottom: 10px;
-  // margin-left: 12px;
   transition: background-color $timing-function, color $timing-function,
     box-shadow $timing-function;
 
@@ -191,7 +190,24 @@
   transition: fill $timing-function;
 }
 
-// @media screen and (min-width: $tablet) {
+@media screen and (min-width: $tablet) {
+  .footer-tablet {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .social-net {
+    margin-left: 165px;
+    padding-top: 65px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (min-width: $desktop) {
   .footer-adress {
@@ -200,6 +216,15 @@
 
   .contact-footer {
     margin-bottom: 9px;
+  }
+
+  .social-net {
+    margin-left: 70px;
+    padding-top: 72px;
+  }
+
+  .mailing-btn {
+    margin-left: 12px;
   }
 }
 //     .social-net {
