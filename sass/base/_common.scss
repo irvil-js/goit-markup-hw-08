@@ -5,6 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid teal;
 }
 
 img {
@@ -92,7 +93,7 @@ body {
 
 .section-title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: $main-font-family;
   font-style: $main-font-style;
   font-weight: 700;
@@ -100,4 +101,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $title-color;
+
+  @media screen and (min-width: $desctop) {
+    width: 50px;
+  }
 }

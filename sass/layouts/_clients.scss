@@ -1,17 +1,16 @@
-.client-list {
+.clients-list {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
   justify-content: space-between;
+  padding: 0;
   margin: -15px;
 }
 
 .link.client-link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -25,7 +24,9 @@
 }
 
 .client-item {
+  display: block;
   width: calc((100% - 60px) / 2);
+  padding: 0;
   margin: 15px;
 }
 
@@ -81,9 +82,16 @@
 }
 
 @media screen and (min-width: $tablet) {
+  .client-item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 @media screen and (min-width: $desktop) {
+  .client-item {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+
   .our-clients .container {
     padding-top: 94px;
     padding-bottom: 94px;

@@ -383,6 +383,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid teal;
 }
 
 img {
@@ -472,7 +473,7 @@ body {
 
 .section-title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -634,7 +635,7 @@ body {
   transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 767px) {
   .mobile-menu-btn {
     display: block;
   }
@@ -1575,18 +1576,19 @@ textarea {
   margin-right: 0;
 }
 
-.client-list {
+.clients-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
   margin: -15px;
 }
 
 .link.client-link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1599,7 +1601,9 @@ textarea {
 }
 
 .client-item {
+  display: block;
   width: calc((100% - 60px) / 2);
+  padding: 0;
   margin: 15px;
 }
 
@@ -1650,10 +1654,22 @@ textarea {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .client-item {
+    width: calc((100% - 90px) / 3);
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .client-item {
+    width: calc((100% - 12 * 15px) / 6);
+  }
   .our-clients .container {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .section-title {
+    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
