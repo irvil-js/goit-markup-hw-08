@@ -23,6 +23,11 @@
   letter-spacing: 0.03em;
   background-color: #2f303a;
   padding-bottom: 60px;
+
+  .container {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .left-footer {
@@ -35,7 +40,7 @@
 }
 
 .footer-css .container {
-  display: flex;
+  // display: flex;
 }
 
 .link-contact {
@@ -61,13 +66,17 @@
 }
 
 .social-net {
-  margin-left: 70px;
-  padding-top: 72px;
-}
+ align-content: center;
+
+//   margin-left: 70px;
+//   padding-top: 72px;
+// }
 
 .social-net .social-icons {
-  padding-left: 0;
-  margin-top: 0;
+  display: flex;
+ align-content: center;
+  // padding-left: 0;
+  // margin-top: 0;
 }
 
 .join {
@@ -85,24 +94,24 @@
 }
 
 .subscribe {
-  margin-left: 93px;
-  margin-right: 0;
-  padding-top: 72px;
-  padding-bottom: 94px;
+  // margin-left: 93px;
+  // margin-right: 0;
+  // padding-top: 72px;
+  // padding-bottom: 94px;
 }
 
 .subscribe-form {
-  display: flex;
+  //   display: flex;
   padding: 0;
 }
 
 .mailing-input {
+  // display: flex;
   font-family: $main-font-family;
   font-style: $main-font-style;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
   width: 358px;
   height: 50px;
   align-items: center;
@@ -141,11 +150,11 @@
   border-width: 0;
   width: 200px;
   height: 50px;
-  padding-left: 29px;
-  padding-right: 62px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 12px;
+  // padding-left: 29px;
+  // padding-right: 62px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // margin-left: 12px;
   transition: background-color $timing-function, color $timing-function,
     box-shadow $timing-function;
 
@@ -175,3 +184,34 @@
   fill: $title-color;
   transition: fill $timing-function;
 }
+
+@media screen and (min-width: $tablet) {
+}
+
+// @media screen and (min-width: $desktop) {
+//     .social-net {
+//     margin-left: 70px;
+//     padding-top: 72px;
+//   }
+
+//   .subscribe-form {
+//     display: flex;
+//   }
+
+//   // .mailing-input {
+//   //   // display: flex;
+//   // }
+
+//   .mailing-btn {
+//     padding-left: 29px;
+//     padding-right: 62px;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     margin-left: 12px;
+//   }
+
+//   .social-net {
+//     margin-left: 70px;
+//     padding-top: 72px;}
+  
+//   }

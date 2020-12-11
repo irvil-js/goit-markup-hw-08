@@ -102,7 +102,7 @@ body {
   letter-spacing: 0.03em;
   color: $title-color;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 50px;
   }
 }
