@@ -6,6 +6,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   height: 81px;
+  margin-bottom: 60px;
 }
 
 .adress-footer {
@@ -39,9 +40,9 @@
   margin-top: 9px;
 }
 
-.footer-css .container {
-  // display: flex;
-}
+// .footer-css .container {
+//   // display: flex;
+// }
 
 .link-contact {
   color: rgba(255, 255, 255, 0.6);
@@ -66,17 +67,21 @@
 }
 
 .social-net {
- align-content: center;
-
-//   margin-left: 70px;
-//   padding-top: 72px;
-// }
+  margin-bottom: 60px;
+  // display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //   margin-left: 70px;
+  //   padding-top: 72px;
+}
 
 .social-net .social-icons {
   display: flex;
- align-content: center;
+  justify-content: center;
+  align-items: center;
   // padding-left: 0;
-  // margin-top: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
 .join {
@@ -93,12 +98,12 @@
   margin-bottom: 20px;
 }
 
-.subscribe {
-  // margin-left: 93px;
-  // margin-right: 0;
-  // padding-top: 72px;
-  // padding-bottom: 94px;
-}
+// .subscribe {
+//   // margin-left: 93px;
+//   // margin-right: 0;
+//   // padding-top: 72px;
+//   // padding-bottom: 94px;
+// }
 
 .subscribe-form {
   //   display: flex;
@@ -124,6 +129,7 @@
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
+  margin-bottom: 20px;
   outline: none;
   transition: border-color $timing-function;
 
@@ -150,10 +156,10 @@
   border-width: 0;
   width: 200px;
   height: 50px;
-  // padding-left: 29px;
-  // padding-right: 62px;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   // margin-left: 12px;
   transition: background-color $timing-function, color $timing-function,
     box-shadow $timing-function;
@@ -185,8 +191,7 @@
   transition: fill $timing-function;
 }
 
-@media screen and (min-width: $tablet) {
-}
+// @media screen and (min-width: $tablet) {
 
 // @media screen and (min-width: $desktop) {
 //     .social-net {
@@ -213,5 +218,5 @@
 //   .social-net {
 //     margin-left: 70px;
 //     padding-top: 72px;}
-  
+
 //   }
