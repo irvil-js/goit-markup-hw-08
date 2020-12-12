@@ -477,8 +477,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -486,6 +486,8 @@ body {
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -1637,28 +1639,37 @@ textarea {
   text-align: center;
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-item:last-child .profession {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .team-item:last-child {
+    margin-top: 60px;
+  }
+  .team-item:last-child:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.list .team-item {
-  width: 270px;
-  margin-right: 30px;
-  background-color: white;
-}
-
-.list .team-item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .list-person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: -15px;
+  }
+  .team-item {
+    display: block;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .section-staff .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .team-item {
+    padding-bottom: 30px;
   }
 }
 
