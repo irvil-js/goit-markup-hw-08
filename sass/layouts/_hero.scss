@@ -14,14 +14,14 @@
   background-color: #2f303a;
 
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  height: 600px;
+  padding-bottom: 118px;
+  padding-top: 118px;
+  height: 400px;
 }
 
 .main-title {
   display: block;
-  width: 696px;
+  width: 360px;
   margin-top: 0px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -30,8 +30,9 @@
   font-family: $main-font-family;
   font-style: $main-font-style;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -58,5 +59,22 @@
     color: $white-clr;
     outline: none;
     transition: background-color $timing-function, color $timing-function;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: $desktop) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    height: 600px;
+  }
+
+  .main-title {
+    font-size: 44px;
+    line-height: 1.364;
+    width: 696px;
   }
 }
