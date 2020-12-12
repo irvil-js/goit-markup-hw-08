@@ -27,7 +27,11 @@
 
   .container {
     justify-content: center;
-    text-align: center;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: $desktop - 1) {
+      text-align: center;
+    }
   }
 }
 
@@ -39,10 +43,6 @@
   display: inline-block;
   margin-top: 8px;
 }
-
-// .footer-css .container {
-//   // display: flex;
-// }
 
 .link-contact {
   color: rgba(255, 255, 255, 0.6);
@@ -68,18 +68,12 @@
 
 .social-net {
   margin-bottom: 60px;
-  // display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //   margin-left: 70px;
-  //   padding-top: 72px;
 }
 
 .social-net .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding-left: 0;
   margin-top: 0;
   padding: 0;
 }
@@ -98,20 +92,11 @@
   margin-bottom: 20px;
 }
 
-// .subscribe {
-//   // margin-left: 93px;
-//   // margin-right: 0;
-//   // padding-top: 72px;
-//   // padding-bottom: 94px;
-// }
-
 .subscribe-form {
-  //   display: flex;
   padding: 0;
 }
 
 .mailing-input {
-  // display: flex;
   font-family: $main-font-family;
   font-style: $main-font-style;
   font-weight: 400;
@@ -190,10 +175,15 @@
   transition: fill $timing-function;
 }
 
+@media screen and (max-width: $desktop - 1) {
+  .footer-tablet {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: $tablet) {
   .footer-tablet {
     display: flex;
-    text-align: center;
     justify-content: center;
   }
 
@@ -210,6 +200,10 @@
 }
 
 @media screen and (min-width: $desktop) {
+  .footer-css .container {
+    display: flex;
+  }
+
   .footer-adress {
     margin-top: 9px;
   }
@@ -218,18 +212,29 @@
     margin-bottom: 9px;
   }
 
+  .adress {
+    margin-bottom: 0;
+  }
+
   .social-net {
     margin-left: 70px;
     padding-top: 72px;
+    margin-bottom: 0;
   }
 
   .mailing-btn {
     margin-left: 12px;
   }
 
-  // .mailing-input {
-  //   display: flex;
-  // }
+  .subscribe {
+    margin-left: 93px;
+    margin-right: 0;
+    padding-top: 72px;
+  }
+
+  .mailing-input {
+    margin-bottom: 0;
+  }
 
   .subscribe-form {
     flex-direction: row;
@@ -238,21 +243,3 @@
     text-align: center;
   }
 }
-//     .social-net {
-//     margin-left: 70px;
-//     padding-top: 72px;
-//   }
-
-//   .mailing-btn {
-//     padding-left: 29px;
-//     padding-right: 62px;
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-//     margin-left: 12px;
-//   }
-
-//   .social-net {
-//     margin-left: 70px;
-//     padding-top: 72px;}
-
-//   }

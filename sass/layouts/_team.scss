@@ -13,8 +13,11 @@
 
 .section-staff {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .profession {
@@ -51,4 +54,19 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+@media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: $desktop) {
+  .section-staff .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  // .social-icons {
+  //     display: flex;
+  //     padding-left: 32px;
+  // }
 }
