@@ -235,30 +235,58 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list employment-list">
             <li class="directions">
-              <img
-                src="./img/gallery/img1.jpg"
-                width="370"
-                height="294"
-                alt="декстопные приложения"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/employment/img1@1x.jpg 1x,
+                    ./img/employment/img1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/gallery/img1.jpg"
+                  width="370"
+                  height="294"
+                  alt="декстопные приложения"
+                />
+              </picture>
               <h3 class="title-advantages title-card">декстопные приложения</h3>
             </li>
             <li class="directions">
-              <img
-                src="./img/gallery/img2.jpg"
-                width="370"
-                height="294"
-                alt="мобильные приложения"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/employment/img2@1x.jpg 1x,
+                    ./img/employment/img2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/gallery/img2.jpg"
+                  width="370"
+                  height="294"
+                  alt="мобильные приложения"
+                />
+              </picture>
               <h3 class="title-advantages title-card">мобильные приложения</h3>
             </li>
             <li class="directions">
-              <img
-                src="./img/gallery/img3.jpg"
-                width="370"
-                height="294"
-                alt="цветовая палитра"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/employment/img3@1x.jpg 1x,
+                    ./img/employment/img3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/gallery/img3.jpg"
+                  width="370"
+                  height="294"
+                  alt="цветовая палитра"
+                />
+              </picture>
+
               <h3 class="title-advantages title-card">дизайнерские решения</h3>
             </li>
           </ul>
@@ -273,7 +301,31 @@
           <div class="team-list">
             <ul class="list list-person">
               <li class="team-item">
-                <img src="./img/team/demjanenko.jpg" alt="Игорь Демьяненко" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/team1/team1desk@1x.jpg 1x,
+                      ./img/team1/team1desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team1tablet.jpg    1x,
+                      ./img/team1/team1tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team1phone.jpg    1x,
+                      ./img/team1/team1phone@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/team/demjanenko.jpg" alt="Игорь Демьяненко" />
+                </picture>
+
                 <h3 class="title-name">Игорь Демьяненко</h3>
                 <p lang="en" class="profession">Product Designer</p>
                 <ul class="list social-icons">
@@ -335,7 +387,31 @@
               </li>
 
               <li class="team-item">
-                <img src="./img/team/repina.jpg" alt="Ольга Репина" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/team1/team2desk@1x.jpg 1x,
+                      ./img/team1/team2desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team2tablet.jpg    1x,
+                      ./img/team1/team2tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team2phone.jpg    1x,
+                      ./img/team1/team2phone@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/team/repina.jpg" alt="Ольга Репина" />
+                </picture>
+
                 <h3 class="title-name">Ольга Репина</h3>
                 <p lang="en" class="profession">Frontend Developer</p>
                 <ul class="list social-icons">
@@ -397,7 +473,31 @@
               </li>
 
               <li class="team-item">
-                <img src="./img/team/tarasov.jpg" alt="Николай Тарасов" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/team1/team3desk@1x.jpg 1x,
+                      ./img/team1/team3desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team3tablet.jpg    1x,
+                      ./img/team1/team3tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team3phone.jpg    1x,
+                      ./img/team1/team3phone@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/team/tarasov.jpg" alt="Николай Тарасов" />
+                </picture>
+
                 <h3 class="title-name">Николай Тарасов</h3>
                 <p lang="en" class="profession">Marketing</p>
                 <ul class="list social-icons">
@@ -459,7 +559,31 @@
               </li>
 
               <li class="team-item">
-                <img src="./img/team/ermakov.jpg" alt="Михаил Ермаков" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/team1/team4desk@1x.jpg 1x,
+                      ./img/team1/team4desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team4tablet.jpg    1x,
+                      ./img/team1/team4tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/team1/team4phone.jpg    1x,
+                      ./img/team1/team4phone@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./img/team/ermakov.jpg" alt="Михаил Ермаков" />
+                </picture>
+
                 <h3 class="title-name">Михаил Ермаков</h3>
                 <p lang="en" class="profession">UI Designer</p>
                 <ul class="list social-icons">
