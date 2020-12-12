@@ -1117,6 +1117,7 @@ body {
     padding-top: 72px;
   }
   .mailing-input {
+    width: 358px;
     margin-bottom: 0;
   }
   .subscribe-form {
