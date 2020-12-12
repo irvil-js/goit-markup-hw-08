@@ -84,8 +84,14 @@
 }
 
 @media screen and (min-width: $desktop) {
+  .section-staff .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   .team-item {
     padding-bottom: 30px;
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 //   //   .section-staff .container {

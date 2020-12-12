@@ -1592,9 +1592,6 @@ textarea {
   .employment .container {
     display: block;
   }
-  .employment {
-    padding-bottom: 94px;
-  }
   .employment-list {
     display: flex;
   }
@@ -1668,8 +1665,13 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
+  .section-staff .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .team-item {
     padding-bottom: 30px;
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 
