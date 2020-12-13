@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
 }
 
 .btn-portfolio {
@@ -13,4 +12,23 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+@media (max-width: $tablet - 1) {
+  .btn-portfolio:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .list-nav {
+    justify-content: center;
+  }
+
+  .btn-portfolio {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $desktop) {
 }

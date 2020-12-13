@@ -1,6 +1,6 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border: 1px solid #ececec;
 }
 
@@ -51,7 +51,7 @@
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .box {
@@ -79,7 +79,19 @@
 }
 
 @media screen and (min-width: $tablet) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: $desktop) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .flex-container {
+    margin-top: 50px;
+  }
 }
