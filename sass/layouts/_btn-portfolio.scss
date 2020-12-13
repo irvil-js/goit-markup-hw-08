@@ -3,10 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  // margin-bottom: 40px;
 }
 
 .btn-portfolio {
   margin-right: 8px;
+  margin-bottom: 15px;
   transition: color $timing-function, background-color $timing-function;
 
   &:last-child {
@@ -14,9 +16,13 @@
   }
 }
 
+.btn-portfolio:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
 @media (max-width: $tablet - 1) {
-  .btn-portfolio:nth-child(-n + 3) {
-    margin-bottom: 15px;
+  .btn-portfolio:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
