@@ -1162,6 +1162,7 @@ textarea {
 .admission-contract {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .checkbox-icon {
@@ -1201,7 +1202,7 @@ textarea {
     width: 448px;
   }
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
   .modal-form {

@@ -32,6 +32,8 @@
 .modal {
   padding: 40px;
   position: absolute;
+  // top: calc(max(50%, 1000px));
+  // left: calc(50%);
   top: 50%;
   left: 50%;
   width: 100%;
@@ -279,6 +281,7 @@ textarea {
 .admission-contract {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .checkbox-icon {
@@ -319,7 +322,7 @@ textarea {
   }
 
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 
