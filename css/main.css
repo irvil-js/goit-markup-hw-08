@@ -901,6 +901,8 @@ body {
   opacity: 1;
   z-index: 100;
   transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 93px, 15px, 94px;
+  overflow-y: scroll;
 }
 
 .backdrop:not(is-hidden) .modal {
@@ -921,11 +923,13 @@ body {
 }
 
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -933,17 +937,16 @@ body {
 
 .modal-form {
   display: inline-block;
+  width: 100%;
+  max-width: 450px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -1015,8 +1018,6 @@ textarea {
 }
 
 .form {
-  padding-left: 40px;
-  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1025,7 +1026,7 @@ textarea {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 448px;
+  width: 100%;
   text-align: start;
   margin-bottom: 10px;
 }
@@ -1045,7 +1046,6 @@ textarea {
 .field {
   display: flex;
   flex-direction: column;
-  width: 448px;
   height: 120px;
   margin-bottom: 20px;
   margin-top: 4px;
@@ -1151,11 +1151,17 @@ textarea {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
+  text-align: start;
   color: #757575;
   margin-bottom: 30px;
+}
+
+.admission-contract {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .checkbox-icon {
@@ -1188,6 +1194,23 @@ textarea {
   color: #2196f3;
   text-decoration: none;
   border-bottom: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .field {
+    width: 448px;
+  }
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-form {
+    line-height: 1.15;
+  }
+  .contract {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .adress {
