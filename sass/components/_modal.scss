@@ -18,7 +18,7 @@
   }
 
   &.is-hidden .modal {
-    transition: transform 0ms;
+    transition: transform $timing-function;
     transform: scale(0) translate(-50%, -50%);
   }
 
