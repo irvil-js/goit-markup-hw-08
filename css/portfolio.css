@@ -383,7 +383,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid teal;
 }
 
 img {
@@ -1191,6 +1190,7 @@ body {
 }
 
 .project-title {
+  display: flex;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1255,6 +1255,9 @@ body {
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   .project-title {
     max-width: 306px;
+  }
+  .box:nth-child(1) {
+    margin-bottom: 66px;
   }
 }
 
