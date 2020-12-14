@@ -27,7 +27,7 @@
 }
 
 .project-title {
-  display: flex;
+  // display: inline-flex;
   font-family: $main-font-family;
   font-style: $main-font-style;
   font-weight: 700;
@@ -74,6 +74,7 @@
   position: relative;
   display: flex;
   overflow: hidden;
+  height: 294px;
 }
 
 @media screen and (min-width: $tablet) {
@@ -86,6 +87,12 @@
 
   .box {
     max-width: 354px;
+  }
+}
+
+@media screen and (max-width: $desktop - 1) and (min-width: $tablet) {
+  .project-title {
+    max-width: 306px;
   }
 }
 
