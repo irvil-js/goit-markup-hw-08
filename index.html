@@ -33,7 +33,7 @@
           </ul>
         </nav>
 
-        <button type="button" class="mobile-menu-btn is-open" data-menu-button>
+        <button type="button" class="mobile-menu-btn" data-menu-button>
           <svg
             width="40"
             height="40"
@@ -70,44 +70,46 @@
       </div>
     </header>
 
-    <div class="container mobile-menu is-open">
-      <div class="mobile-nav">
-        <ul class="list site-nav-mobile">
-          <li class="mobile-item">
-            <a href="" class="link-nav link current">Студия</a>
-          </li>
-          <li class="mobile-item">
-            <a href="./portfolio.html" class="link link-nav">Портфолио</a>
-          </li>
-          <li class="mobile-item">
-            <a href="" class="link link-nav">Контакты</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="mobile-contacts">
-        <ul class="list auth-nav-mobile">
-          <li class="mobile-auth-item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon-nav envelope-icon-menu">
-                <use href="./icons/symbol-defs.svg#icon-envelope"></use></svg
-              >info@devstudio.com
-            </a>
-          </li>
-          <li class="mobile-auth-item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-nav phone-icon-menu">
-                <use href="./icons/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <main>
       <section class="hero">
+        <div class="container mobile-menu" data-menu>
+          <div class="mobile-nav">
+            <ul class="list site-nav-mobile">
+              <li class="mobile-item">
+                <a href="" class="link-nav link current">Студия</a>
+              </li>
+              <li class="mobile-item">
+                <a href="./portfolio.html" class="link link-nav">Портфолио</a>
+              </li>
+              <li class="mobile-item">
+                <a href="" class="link link-nav">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-contacts">
+            <ul class="list auth-nav-mobile">
+              <li class="mobile-auth-item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="icon-nav envelope-icon-menu">
+                    <use
+                      href="./icons/symbol-defs.svg#icon-envelope"
+                    ></use></svg
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="mobile-auth-item">
+                <a href="tel:+380961111111" class="link">
+                  <svg class="icon-nav phone-icon-menu">
+                    <use href="./icons/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div class="container hero-view">
           <h1 class="main-title">эффективные решения для вашего бизнеса</h1>
           <button type="button" class="btn-service" data-modal-open>
