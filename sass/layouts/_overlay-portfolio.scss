@@ -35,6 +35,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $white-clr;
+  transition: opacity $timing-function;
 
   .project:hover &,
   .project:focus & {
