@@ -24,10 +24,12 @@
   opacity: 0;
 
   display: inline-block;
-  width: 322px;
+  width: 100%;
+  // max-width: 322px;
   height: 168px;
   text-align: left;
-  justify-content: center;
+  // align-content: stretch;
+  // justify-content: space-between;
   font-family: $main-font-family;
   font-style: $main-font-style;
   font-weight: normal;
@@ -35,6 +37,8 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $white-clr;
+  overflow-y: scroll;
+
   transition: opacity $timing-function;
 
   .project:hover &,
