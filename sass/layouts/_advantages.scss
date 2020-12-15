@@ -19,6 +19,10 @@
   .item-text:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  .title-advantages {
+    text-align: center;
+  }
 }
 
 .item-text::before {

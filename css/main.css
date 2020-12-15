@@ -1587,6 +1587,9 @@ textarea {
   .item-text:not(:last-child) {
     margin-bottom: 30px;
   }
+  .title-advantages {
+    text-align: center;
+  }
 }
 
 .item-text::before {
@@ -1732,7 +1735,7 @@ textarea {
   .team-item:last-child {
     margin-top: 60px;
   }
-  .team-item:last-child:not(:last-child) {
+  .team-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }

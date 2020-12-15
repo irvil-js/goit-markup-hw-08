@@ -48,10 +48,10 @@
 @media screen and (max-width: $tablet - 1) {
   .team-item:last-child {
     margin-top: 60px;
+  }
 
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
