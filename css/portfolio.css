@@ -1313,9 +1313,10 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0;
   display: inline-block;
-  width: 100%;
+  width: 322px;
   height: 168px;
   text-align: left;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;

@@ -24,12 +24,10 @@
   opacity: 0;
 
   display: inline-block;
-  width: 100%;
-  // max-width: 322px;
+  width: 322px;
   height: 168px;
   text-align: left;
-  // align-content: stretch;
-  // justify-content: space-between;
+  justify-content: center;
   font-family: $main-font-family;
   font-style: $main-font-style;
   font-weight: normal;
