@@ -455,12 +455,12 @@ body {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover, .link:focus {
   color: #2196f3;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -502,7 +502,7 @@ body {
   border-radius: 4px;
   height: 38px;
   border: none;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover, .btn:focus {
@@ -510,7 +510,7 @@ body {
   background-color: #2196f3;
   color: #ffffff;
   outline: none;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .container {
@@ -572,7 +572,7 @@ body {
 .auth-item .link:hover .phone-icon,
 .auth-item .link:focus .phone-icon {
   fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-icon {
@@ -583,7 +583,7 @@ body {
 .auth-item .link:hover .envelope-icon,
 .auth-item .link:focus .envelope-icon {
   fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .link {
@@ -597,14 +597,14 @@ body {
   display: block;
   background-size: contain;
   fill: #212121;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close-svg {
   display: block;
   background-size: contain;
   fill: #212121;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn .menu-close-svg {
@@ -657,13 +657,13 @@ body {
 .mobile-menu-btn:hover .menu-close-svg,
 .mobile-menu-btn:focus .menu-close-svg {
   fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn:hover .menu-icon-svg,
 .mobile-menu-btn:focus .menu-icon-svg {
   fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767px) {
@@ -682,7 +682,7 @@ body {
   justify-content: center;
   margin-right: 10px;
   fill: #757575;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-icon-menu {
@@ -693,7 +693,7 @@ body {
 .mobile-auth-item .link:hover .envelope-icon-menu,
 .mobile-auth-item .link:focus .envelope-icon-menu {
   fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-icon-menu {
@@ -704,14 +704,14 @@ body {
 .mobile-auth-item .link:hover .phone-icon-menu,
 .mobile-auth-item .link:focus .phone-icon-menu {
   fill: #2196f3;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-mobile,
 .auth-nav-mobile {
   display: inline;
   text-align: center;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-mobile .link-nav.current {
@@ -721,7 +721,7 @@ body {
 .site-nav-mobile .link-nav:hover,
 .site-nav-mobile .link-nav:focus {
   color: #2196f3;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-nav {
@@ -748,7 +748,7 @@ body {
   border-radius: 2px;
   background-color: #2196f3;
   transform: scale(0);
-  transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-nav:focus::after, .link-nav:hover::after {
@@ -763,7 +763,7 @@ body {
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: #212121;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-auth-item .link {
@@ -774,7 +774,7 @@ body {
   font-size: 18px;
   line-height: 1.167;
   letter-spacing: 0.02em;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-item:not(:last-child) {
@@ -878,25 +878,25 @@ body {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
-  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link:hover, .social-icons-link:focus {
   background-color: #2196f3;
-  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-svg {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
   fill: #ffffff;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-item:not(:last-child) {
@@ -965,7 +965,7 @@ body {
 
 .icons-footer {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg {
@@ -1024,12 +1024,12 @@ body {
   padding-bottom: 0;
   margin-bottom: 20px;
   outline: none;
-  transition: border-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailing-input:focus, .mailing-input:not(:placeholder-shown) {
   border-color: #2196f3;
-  transition: border-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailing-btn {
@@ -1052,7 +1052,7 @@ body {
   padding-right: 62px;
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1), color 2250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailing-btn:hover, .mailing-btn:focus {
@@ -1060,13 +1060,13 @@ body {
   color: #ffffff;
   outline: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1), color 2250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailing-btn:hover .send-icon,
 .mailing-btn:focus .send-icon {
   fill: #ffffff;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-icon {
@@ -1076,7 +1076,7 @@ body {
   width: 24px;
   height: 24px;
   fill: #212121;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 1199px) {
@@ -1149,7 +1149,7 @@ body {
 .btn-portfolio {
   margin-right: 8px;
   margin-bottom: 15px;
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-portfolio:last-child {
@@ -1190,7 +1190,7 @@ body {
 }
 
 .project:hover, .project:focus {
-  transition: box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1297,7 +1297,7 @@ body {
   background-color: #2196f3;
   opacity: 0.5;
   transform: translateY(100%);
-  transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project:hover .box-overlay,
@@ -1324,13 +1324,12 @@ body {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  overflow-y: scroll;
-  transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project:hover .article-portfolio,
 .project:focus .article-portfolio {
   opacity: 1;
-  transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=portfolio.css.map */
